@@ -1,0 +1,99 @@
+<html>
+<head>
+<style type="text/css">
+.productloader{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+.productloader ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.productloader ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.productloader ul li  .product-loader{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.productloader ul li  .product-loader:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.productloader ul li .loader_field{
+    width: 49%;
+}
+.productloader ul li .field-full{
+    width: 100%;
+}
+.productloader ul li input.align-left{
+    float:left;
+}
+.productloader ul li input.align-right{
+    float:right;
+}
+.productloader ul li textarea{
+    width: 100%;
+    height: 100px;
+}
+.productloader ul li input[type="button"], 
+.productloader ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: darkcyan;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.productloader ul li input[type="button"]:hover, 
+.productloader ul li input[type="submit"]:hover {
+    background-color: #28739E;	
+}
+.loader_submit{
+	float:center;
+}
+</style>
+</head>
+<body>
+<form class="productloader">
+<h2> Please Enter the Below Details </h2>
+<ul>
+<li>
+    <input type="text" name="store" title="Enter name of the store" class="product-loader field-full align-none" placeholder="Store" />
+</li>
+<li>
+    <input type="text" name="barcode" title="Barcode of the product" class="product-loader field-full align-none" placeholder="Barcode" />
+</li>
+<li>
+<input type="number" name="price" title="Price in rupees" class="product-loader field-full align-none" placeholder="Price" />
+</li>
+<li>
+<textarea name="textarea" class="product-loader" title="Provide additional information if any" placeholder="Notes"></textarea>
+</li>
+<li>
+<input type="submit" value="Submit" />
+</li>
+</ul>
+</form>
+</body>
+</html>
